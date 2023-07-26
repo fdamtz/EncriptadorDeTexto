@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS';
+}
+
+header {
+  width: 100%;
+  height: 60px;
+}
+
+body {
+  background: #ffdbed;
+}
+
+/* ////////////// */
+/* /////LOGO//// */
+/* Clases llevan un . antes del nombre */
+.logo {
+  display: flex;
+  padding-top: 10px;
+  margin-left: 50px;
+  width: 2, 5%;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #ffdbed;
+  ;
+}
+
+/* //////////////// */
+/* TEXTO INGRESADO/ */
+/* //////////////// */
+.texto {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  left: 12%;
+  top: 15%;
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: bold;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  color: #8a2be2;
+  border: #ff41b6 solid 5px;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 5px;
+  background-color: #ffdbed;
+}
+.texto::placeholder {
+  color: #ff41b6;
+}
+.texto:hover {
+  cursor: pointer;
+  border-color: #ff066e;
+}
+.texto:focus,
+.texto:active {
+  outline: none;
+}
+
+/* ///////////////////// */
+/* *****CONDICIONES***** */
+/* ///////////////////// */
+.condiciones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+  position: absolute;
+  width: 80%;
+  left: 16%;
+  top: 55%;
+}
+.condiciones p {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+  opacity: 0.8;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* **************************/
+/* **************************/
+/* BOTONES */
+/* **************************/
+/* **************************/
+.botones {
+  display: flex;
+  top: 80%;
+  align-content: space-between;
+}
+.btn-encriptar {
+  background-color: #ff066e;
+  border: 1px solid #ff62be;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 230px;
+  margin-top: 30%;
+  margin-left: 10%;
+}
+.btn-encriptar:hover{
+  background-color: #ff378ac2;
+  cursor: pointer;
+}
+
+.btn-desencriptar {
+  background: #ff378ac2;
+  border: 2px solid #ff1381;
+  border-radius: 24px;
+  color: #f0e0ff;
+  cursor: pointer;
+  height: 67px;
+  width: 230px;
+  margin-top: 30%;
+  margin-left: 1%;
+}
+.btn-desencriptar:hover{
+  background-color: #ff066e;
+  cursor: pointer;
+}
+
+/* ******************** */
+/* ****ENCRIPTACIÓN**** */
+/* ******************* */
+.encriptado {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  left: 60%;
+  top: 5%;
+  background: #ffdbed;
+  box-shadow: 15px 26px 30px -8px #c20051;
+  border-radius: 32px;
+}
+/* ******************** */
+/* TEXTO ENCRIPTADO */
+/* ******************* */
+.mensaje-encriptado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16px;
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  text-align: center;
+}
+/***********************************/
+/****ALERTA DE TEXTO ENCRIPTADO****/
+.mensaje-encriptado h2 {
+  width: 60%;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #e02957;
+}
+.mensaje-encriptado p {
+  width: 80%;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #810fc4;
+}
+
+.encriptado img {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 15%;
+}
+
+/* *************************** */
+/* *************************** */
+/* COPIAR */
+/* *************************** */
+/* *************************** */
+
+.contenedor-copiar{
+  display: flex;
+  position: absolute;
+  bottom: 400px;
+  top: 700px;
+  background-color: aqua;
+  padding-left: 40px;
+}
+.btn-copiar{
+  border: 3px solid #a83eff;
+  border-radius: 24px;
+  background-color: #a83eff;
+  color: #f7b8ff;
+  font-weight: bold;
+  width: 268px;
+  height: 57px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Helvetica Neue';
+  cursor: pointer;
+  position: relative;
+  top: 130px;
+  right: 4px;
+  left: -240%;
+}
+.btn-copiar:hover{
+  cursor: pointer;
+  border: 3px dotted #d571e2;
+  background-color: #f7b8ff;
+  color: #8e00e0;
+}
+.contenedor-copiar{
+  display: flex;
+  position: absolute;
+  left: 30px;
+  bottom: 400px;
+  top: 320px;
+  background-color: aqua;
+  padding-left: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 57.5em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .encriptar {
+    width: 100%;
+  }
+
+  .texto {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+  }
+
+  .terminos {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+
+  .terminos p {
+    font-size: 16px;
+  }
+
+  .botones {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+
+  .btn-encriptar,
+  .btn-desencriptar {
+    width: 48%;
+    border-radius: 16px;
+  }
+
+  .btn-encriptar:hover,
+  .btn-desencriptar:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+
+  .encriptado {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+
+  .mensaje-encriptado {
+    width: 100%;
+    top: 5%;
+  }
+
+  .encriptado img {
+    top: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
